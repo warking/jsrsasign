@@ -829,6 +829,7 @@ KJUR.crypto.ECDSA.biRSSigToASN1Sig = function(biR, biS) {
  */
 KJUR.crypto.ECDSA.getName = function(s) {
     if (s === "2a8648ce3d030107") return "secp256r1"; // 1.2.840.10045.3.1.7
+    if (s === "2a811ccf5501822d") return "secp256r1"; // gm
     if (s === "2b8104000a") return "secp256k1"; // 1.3.132.0.10
     if (s === "2b81040022") return "secp384r1"; // 1.3.132.0.34
     if ("|secp256r1|NIST P-256|P-256|prime256v1|".indexOf(s) !== -1) return "secp256r1";
